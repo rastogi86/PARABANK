@@ -11,9 +11,10 @@ $ cd PARABANK
 
 ###To launch cypress runner
 $ npx cypress open
-##### Post this, click the test you intend to run
 
-### to run specific spec test 
+###Post this, click the test you intend to run specific spec test 
+
+### To run a specific test from command line prompt
 $ npx cypress run --spec 'cypress/integration/Tests/userRegistration.spec.js'
 $ npx cypress run --spec 'cypress/integration/Tests/userTransactions.spec.js'
  
