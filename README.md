@@ -16,6 +16,7 @@ $ npx cypress open
 
 ### To run a specific test from command line prompt
 $ npx cypress run --spec 'cypress/integration/Tests/userRegistration.spec.js'
+
 $ npx cypress run --spec 'cypress/integration/Tests/userTransactions.spec.js'
  
 
