@@ -1,0 +1,9 @@
+{
+    "execTimeout":100000,
+
+    "env":
+    {   
+        "baseURL":"",
+        "userName":""
+    }
+}
