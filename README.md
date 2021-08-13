@@ -23,3 +23,17 @@ $ npx cypress run --spec 'cypress/integration/Tests/*.js'
 
 
 ###The report.html containing the run status will be located under cypress/reports/report.html
+
+
+## userRegistration.spec.js file contains tests relating to 
+● User Registration
+● User Login 
+● Open New Account 
+● Logout 
+
+## userTransactions.spec.js file contains tests relating to 
+● Accounts Overview
+● Transfer Funds 
+● Bill Pay 
+● Find Transactions By Amount 
+
