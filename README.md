@@ -21,6 +21,7 @@ $ npx cypress run --spec 'cypress/integration/Tests/userTransactions.spec.js'
  
 
 ###To run all tests under Tests folder 
+
 $ npx cypress run --spec 'cypress/integration/Tests/*.js'
 
 
