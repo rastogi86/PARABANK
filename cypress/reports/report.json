@@ -1,0 +1,319 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 9,
+    "passes": 9,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-08-13T06:54:10.414Z",
+    "end": "2021-08-13T06:54:55.047Z",
+    "duration": 44633,
+    "testsRegistered": 9,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "841b5be5-31f6-4b44-b78a-f218c14ecac4",
+      "title": "",
+      "fullFile": "cypress/integration/Tests/userTransactions.spec.js",
+      "file": "cypress/integration/Tests/userTransactions.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e2283458-cb03-4792-876d-ffb0b3b0b9b4",
+          "title": "User Actions Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Transfer funds with success",
+              "fullTitle": "User Actions Test Transfer funds with success",
+              "timedOut": null,
+              "duration": 8456,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "account.UserAction('a', 'Transfer Funds');\naccount.TransferFunds(50);\ncy.get('h1.title').should('have.text', 'Transfer Complete!');",
+              "err": {},
+              "uuid": "50ff20b4-0dc4-4755-aadf-4b362232c86d",
+              "parentUUID": "e2283458-cb03-4792-876d-ffb0b3b0b9b4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Transfer Funds with a -ve amount",
+              "fullTitle": "User Actions Test Transfer Funds with a -ve amount",
+              "timedOut": null,
+              "duration": 3164,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "account.UserAction('a', 'Transfer Funds');\naccount.TransferFunds(-100);\ncy.get('h1.title').should('have.text', 'Transfer Complete!');",
+              "err": {},
+              "uuid": "1294e775-3c38-4f9f-bfd1-1620db3494d6",
+              "parentUUID": "e2283458-cb03-4792-876d-ffb0b3b0b9b4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Transfer Funds Test with empty amount",
+              "fullTitle": "User Actions Test Transfer Funds Test with empty amount",
+              "timedOut": null,
+              "duration": 3044,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "account.UserAction('a', 'Transfer Funds');\naccount.TransferFunds(' ');\ncy.get('p[id=\"amount.errors\"]').should('include.text', 'The amount cannot be empty.');",
+              "err": {},
+              "uuid": "3e2ef193-f6bf-4d86-86ca-ffc31eee8592",
+              "parentUUID": "e2283458-cb03-4792-876d-ffb0b3b0b9b4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Successful bill pay transaction with -ve Amount",
+              "fullTitle": "User Actions Test Successful bill pay transaction with -ve Amount",
+              "timedOut": null,
+              "duration": 4574,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "account.UserAction('a', 'Bill Pay');\naccount.payBill(payee, -25);",
+              "err": {},
+              "uuid": "d1d4b6a6-1533-4a32-8f94-8d2a9627e277",
+              "parentUUID": "e2283458-cb03-4792-876d-ffb0b3b0b9b4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Successful bill pay transaction with $0",
+              "fullTitle": "User Actions Test Successful bill pay transaction with $0",
+              "timedOut": null,
+              "duration": 4587,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "account.UserAction('a', 'Bill Pay');\naccount.payBill(payee, 0);",
+              "err": {},
+              "uuid": "2eb30663-e877-4820-884d-81098309f6f8",
+              "parentUUID": "e2283458-cb03-4792-876d-ffb0b3b0b9b4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Bill Pay transaction with Empty/null amount",
+              "fullTitle": "User Actions Test Bill Pay transaction with Empty/null amount",
+              "timedOut": null,
+              "duration": 4415,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "account.UserAction('a', 'Bill Pay');\naccount.payBill(payee, ' ');",
+              "err": {},
+              "uuid": "26d7b128-fd5e-4c9e-9db4-be3798e41e23",
+              "parentUUID": "e2283458-cb03-4792-876d-ffb0b3b0b9b4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [
+            {
+              "uuid": "fd79ece0-9e80-4a58-9fbd-f23bb82af48b",
+              "title": "Accounts Overview tests ",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Successful Accounts Overview Test",
+                  "fullTitle": "User Actions Test Accounts Overview tests  Successful Accounts Overview Test",
+                  "timedOut": null,
+                  "duration": 2548,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "account.UserAction('a', 'Accounts Overview');\naccount.AccountsOverview();",
+                  "err": {},
+                  "uuid": "eeec234f-77c1-45d9-9a32-894f41b208ac",
+                  "parentUUID": "fd79ece0-9e80-4a58-9fbd-f23bb82af48b",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "eeec234f-77c1-45d9-9a32-894f41b208ac"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 2548,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "66cba8a9-5bd2-47cf-b003-a2a5a158ce05",
+              "title": "Verify Bill Pay Functionality",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Successful bill pay transaction with +ve amount",
+                  "fullTitle": "User Actions Test Verify Bill Pay Functionality Successful bill pay transaction with +ve amount",
+                  "timedOut": null,
+                  "duration": 5136,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "account.UserAction('a', 'Bill Pay');\naccount.payBill(payee, 25);",
+                  "err": {},
+                  "uuid": "4f70a169-f3a0-4c04-9c8c-2dd93c9ac9ed",
+                  "parentUUID": "66cba8a9-5bd2-47cf-b003-a2a5a158ce05",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "4f70a169-f3a0-4c04-9c8c-2dd93c9ac9ed"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 5136,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "1a904d62-1e54-43e7-ae91-d9423cb5e2c5",
+              "title": "Find Transaction By Amount",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Find Transaction By Amount successfully",
+                  "fullTitle": "User Actions Test Find Transaction By Amount Find Transaction By Amount successfully",
+                  "timedOut": null,
+                  "duration": 2705,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "account.UserAction('a', 'Find Transactions');\naccount.findTxnByAmount(25);",
+                  "err": {},
+                  "uuid": "61b8a204-04b1-43f1-ad07-0089459762a6",
+                  "parentUUID": "1a904d62-1e54-43e7-ae91-d9423cb5e2c5",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "61b8a204-04b1-43f1-ad07-0089459762a6"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 2705,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [
+            "50ff20b4-0dc4-4755-aadf-4b362232c86d",
+            "1294e775-3c38-4f9f-bfd1-1620db3494d6",
+            "3e2ef193-f6bf-4d86-86ca-ffc31eee8592",
+            "d1d4b6a6-1533-4a32-8f94-8d2a9627e277",
+            "2eb30663-e877-4820-884d-81098309f6f8",
+            "26d7b128-fd5e-4c9e-9db4-be3798e41e23"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 28240,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFilename": "report",
+        "overwrite": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

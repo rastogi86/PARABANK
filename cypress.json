@@ -5,5 +5,15 @@
     {   
         "baseURL":"",
         "userName":""
-    }
+    },
+
+    "reporter" : "mochawesome",
+    "reporterOptions" :{
+        "reportDir" : "cypress/reports",
+        "reportFilename" : "report",
+        "overwrite" : true,
+        "json" : true,
+        "charts" : true
+    },
+    "video" : false
 }

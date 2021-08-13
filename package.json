@@ -7,9 +7,16 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Sumeet",
-  "license": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rastogi86/PARABANK.git"
+  },
   "devDependencies": {
-    "cypress": "^7.4.0"
+    "cypress": "^7.4.0",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0"
   },
   "dependencies": {
     "faker": "^5.5.3"
